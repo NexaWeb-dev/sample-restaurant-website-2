@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurelia — Café &amp; Table · Fine Dining &amp; Specialty Coffee</title>
+<meta name="description" content="Aurelia is a boutique café and restaurant serving seasonal cuisine, single-origin coffee and handmade desserts. Fictional brand — demo website.">
+<meta name="theme-color" content="#211A17">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preload" as="image" href="assets/images/hero-dining-room.jpg" fetchpriority="high">
+<noscript><style>.loader{display:none}.hero__in,.reveal,.mask{opacity:1!important;transform:none!important;clip-path:none!important}.ch{transform:none!important}</style></noscript>
+</head>
+<body class="is-loading">
+
+<div class="loader" id="loader" aria-hidden="true"><span class="loader__brand">Aurelia</span><span class="loader__line"></span></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="brand" aria-label="Aurelia home">Aurelia<small>Café &amp; Table</small></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#signature">Signatures</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#reserve" class="btn btn--sm nav__cta">Reserve a Table</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg" id="heroBg"><img src="assets/images/hero-dining-room.jpg" width="2200" height="1467" alt="Candlelit dining room with set tables, leather banquettes and warm timber screens at Aurelia" fetchpriority="high" decoding="async"></div>
+  <div class="hero__shade"></div>
+  <p class="hero__side hero__in" style="--d:1.4s">Bandra West · Mumbai · Est. 2011</p>
+  <div class="hero__content">
+    <p class="eyebrow hero__in" style="--d:.2s">Café &amp; Table</p>
+    <h1 id="heroTitle">Aurelia</h1>
+    <div class="hero__foot">
+      <p class="hero__tag hero__in" style="--d:.9s">Seasonal cooking, slow mornings &amp; coffee poured with intent.</p>
+      <div class="hero__cta hero__in" style="--d:1.1s">
+        <a href="#reserve" class="btn btn--primary">Reserve a Table <span class="arr" aria-hidden="true">→</span></a>
+        <a href="#menu" class="link-line">Explore Our Menu</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__info hero__in" style="--d:1.3s">
+    <span>14 Linking Road, Bandra West</span>
+    <span>Open 8 am – 11 pm · Closed Tuesdays</span>
+    <a href="#story" class="hero__scroll" aria-label="Scroll to our story"><i></i>Scroll</a>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section story" id="story">
+  <div class="wrap story__grid">
+    <div class="story__imgs">
+      <div class="story__main mask"><img data-parallax="0.06" src="assets/images/cafe-bar-interior.jpg" width="1400" height="1050" alt="Café bar and pendant-lit dining room at Aurelia" data-fb="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=max&w=1600&q=78" loading="lazy" decoding="async"></div>
+      <div class="story__small mask"><img data-parallax="-0.05" src="assets/images/plated-dish.jpg" width="1400" height="933" alt="A carefully plated main course" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=max&w=1600&q=78" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="story__text">
+      <p class="eyebrow reveal">Our Story</p>
+      <h2 class="reveal">A table set for <em>unhurried</em> hours.</h2>
+      <p class="lead reveal">Aurelia began as a twelve-seat coffee counter and grew, patiently, into a restaurant built around one idea: that good hospitality is a form of attention.</p>
+      <div class="story__cols reveal">
+        <div><h3>Philosophy</h3><p>We cook with the seasons and say no to shortcuts. Menus change as the markets do, and every plate is finished to order.</p></div>
+        <div><h3>Ingredients</h3><p>Single-estate coffee, stone-milled flour, farm-fresh produce and dairy from small producers we know by name.</p></div>
+        <div><h3>Hospitality</h3><p>Our team is trained to anticipate rather than interrupt — so you can simply enjoy the room, the food and the company.</p></div>
+      </div>
+      <dl class="stats reveal">
+        <div><dt data-count="14">0</dt><dd>Years of craft</dd></div>
+        <div><dt data-count="32">0</dt><dd>Signature dishes</dd></div>
+        <div><dt data-count="85" data-suffix="k+">0</dt><dd>Guests hosted</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE DISHES -->
+<section class="section section--dark sig" id="signature">
+  <div class="wrap">
+    <div class="head head--split reveal">
+      <div><p class="eyebrow">Signature Dishes</p><h2>Three plates<br>we are <em>known</em> for</h2></div>
+      <p class="head__aside">Dishes that have stayed on our menu through every season — refined, never replaced.</p>
+    </div>
+    <div id="features"></div>
+
+    <div class="more">
+      <div class="more__bar reveal">
+        <h3>Also from the kitchen</h3>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter dishes">
+          <button class="is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button data-filter="Breakfast" role="tab" aria-selected="false">Breakfast</button>
+          <button data-filter="Main Course" role="tab" aria-selected="false">Main Course</button>
+          <button data-filter="Desserts" role="tab" aria-selected="false">Desserts</button>
+          <button data-filter="Beverages" role="tab" aria-selected="false">Beverages</button>
+        </div>
+      </div>
+      <div class="dishes" id="dishes"></div>
+    </div>
+    <p class="legend"><span class="veg" aria-hidden="true"></span> Vegetarian &nbsp;·&nbsp; <span class="chef-tag">Chef's pick</span></p>
+  </div>
+</section>
+
+<!-- FULL MENU -->
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="head head--split reveal">
+      <div><p class="eyebrow">The Menu</p><h2>Complete <em>menu</em></h2></div>
+      <p class="head__aside">Prices in Indian Rupees, inclusive of service. Please tell us about any allergies. <span class="veg" aria-hidden="true"></span> vegetarian &nbsp;·&nbsp; <span class="chef-inline">★ Chef's pick</span></p>
+    </div>
+    <div class="menu" id="fullMenu"></div>
+  </div>
+</section>
+
+<!-- AMBIENCE -->
+<section class="ambience" id="ambience">
+  <div class="ambience__img mask"><img data-parallax="0.08" src="assets/images/ambience-interior.jpg" width="1800" height="1350" alt="Intimate restaurant interior with warm pendant lighting and seating" data-fb="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=max&w=1600&q=78" loading="lazy" decoding="async"></div>
+  <div class="ambience__text reveal">
+    <p class="eyebrow">The Atmosphere</p>
+    <h2>Light, <em>linen</em> &amp; low conversation.</h2>
+    <p>Hand-plastered walls, walnut tables and brass pendants that glow rather than glare. By day the room fills with soft window light; by evening it settles into candlelit calm.</p>
+    <ul class="ambience__list">
+      <li><strong>The Salon</strong> 48 seats, banquettes &amp; window tables</li>
+      <li><strong>The Counter</strong> Watch the baristas and pastry team work</li>
+      <li><strong>The Courtyard</strong> 20 seats under olive trees</li>
+    </ul>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="head head--split reveal">
+      <div><p class="eyebrow">Gallery</p><h2>A look <em>inside</em></h2></div>
+      <p class="head__aside">Rooms, plates and the quiet rituals in between. Select any image to view it larger.</p>
+    </div>
+    <div class="gallery" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section section--olive" id="reviews">
+  <div class="wrap reviews">
+    <div class="reviews__side reveal">
+      <p class="eyebrow">Guest Words</p>
+      <h2>What guests <em>say</em></h2>
+      <div class="gbox">
+        <span class="gbox__label">Google rating</span>
+        <span class="gbox__val">Not connected</span>
+        <p>No live rating is shown because Aurelia is a demonstration brand. Once a real Google Business Profile exists, connect it (Places API or a review widget) to display the genuine rating and reviews here.</p>
+      </div>
+    </div>
+    <div class="reviews__main reveal">
+      <div class="slider" id="slider" aria-roledescription="carousel" aria-label="Sample guest reviews">
+        <div class="slider__track" id="sliderTrack"></div>
+      </div>
+      <div class="slider__ctrl">
+        <span class="slider__count" id="count">01 / 03</span>
+        <span class="slider__bar"><i id="bar"></i></span>
+        <button id="prev" aria-label="Previous review">←</button>
+        <button id="next" aria-label="Next review">→</button>
+      </div>
+      <p class="note">Placeholder copy for layout purposes only — not real or verified reviews. Replace with genuine guest feedback.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="section reserve-sec" id="reserve">
+  <div class="wrap reserve">
+    <div class="reserve__intro">
+      <p class="eyebrow reveal">Reservations</p>
+      <h2 class="reveal">Reserve your <em>table</em></h2>
+      <div class="reserve__img mask"><img data-parallax="0.05" src="assets/images/breakfast-table.jpg" width="1200" height="800" alt="Breakfast table with waffles, coffee and shared plates" data-fb="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=max&w=1600&q=78" loading="lazy" decoding="async"></div>
+      <p class="reveal">Tell us when you would like to join us. For parties larger than 10, or private dining, please call.</p>
+      <p class="demo-note reveal"><strong>Demo notice:</strong> this is a static website. The form validates your input and shows a confirmation, but nothing is sent. Real reservations need a backend or a third-party booking service.</p>
+    </div>
+    <form class="form reveal" id="resForm" novalidate>
+      <h3 class="form__title">Request a table</h3>
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required><small class="err"></small></div>
+      <div class="row">
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required><small class="err"></small></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><small class="err"></small></div>
+      </div>
+      <div class="row row--3">
+        <div class="field"><label for="guests">Guests</label>
+          <select id="guests" name="guests" required>
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select><small class="err"></small></div>
+        <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required><small class="err"></small></div>
+        <div class="field"><label for="time">Time</label>
+          <select id="time" name="time" required><option value="">Select</option></select><small class="err"></small></div>
+      </div>
+      <div class="field"><label for="requests">Special requests <span class="opt">optional</span></label><textarea id="requests" name="requests" rows="3" placeholder="Occasion, dietary needs, seating preference…"></textarea></div>
+      <button type="submit" class="btn btn--primary btn--block">Request Reservation <span class="arr" aria-hidden="true">→</span></button>
+      <div class="confirm" id="confirm" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap contact__grid">
+    <div class="contact__info">
+      <p class="eyebrow reveal">Find Us</p>
+      <h2 class="reveal">Visit <em>Aurelia</em></h2>
+      <address class="reveal">
+        Aurelia Café &amp; Table<br>
+        14 Linking Road, Bandra West<br>
+        Mumbai, Maharashtra 400050
+      </address>
+      <ul class="contact__list reveal">
+        <li><span>Phone</span><a href="tel:+912212345678">+91 22 1234 5678</a></li>
+        <li><span>Email</span><a href="mailto:hello@aurelia-cafe.example">hello@aurelia-cafe.example</a></li>
+      </ul>
+      <div class="hours-wrap reveal">
+        <div class="hours-head"><h3>Opening hours</h3><span class="open-badge" id="openBadge"></span></div>
+        <ul class="hours" id="hours"></ul>
+      </div>
+      <div class="socials reveal" aria-label="Social media">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div class="contact__map reveal">
+      <div class="map" id="map">
+        <iframe title="Map showing Aurelia at 14 Linking Road, Bandra West, Mumbai" src="https://maps.google.com/maps?q=14%20Linking%20Road%2C%20Bandra%20West%2C%20Mumbai&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <a class="directions" href="https://www.google.com/maps/dir/?api=1&destination=14+Linking+Road+Bandra+West+Mumbai" target="_blank" rel="noopener">
+        <span><small>Plan your visit</small>Get Directions</span><b aria-hidden="true">→</b>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a href="#home" class="brand brand--foot">Aurelia<small>Café &amp; Table</small></a>
+      <p>A boutique café and restaurant devoted to seasonal food, honest coffee and generous hospitality.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#story">Our Story</a></li><li><a href="#menu">Menu</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#reserve">Reserve</a></li></ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul><li>14 Linking Road, Bandra West<br>Mumbai 400050</li><li><a href="tel:+912212345678">+91 22 1234 5678</a></li><li><a href="mailto:hello@aurelia-cafe.example">hello@aurelia-cafe.example</a></li><li>Daily 8 am – 11 pm<br>Fri–Sun until midnight<br>Closed Tuesdays</li></ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p>Seasonal menus and event invitations, a few times a year.</p>
+      <form class="news" id="newsForm" novalidate>
+        <input type="email" id="newsEmail" placeholder="Your email" aria-label="Email for newsletter" required>
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+      <small id="newsMsg" class="news__msg" role="status" aria-live="polite"></small>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span id="year">2026</span> Aurelia Café &amp; Table. A fictional brand created for demonstration.</span>
+    <span>Photography via Unsplash</span>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous image">←</button>
+  <figure><img id="lbImg" alt="" width="1600" height="1067"><figcaption id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next image">→</button>
+</div>
+
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
